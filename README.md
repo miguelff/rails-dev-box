@@ -1,10 +1,8 @@
-# A Virtual Machine for Ruby on Rails Core Development
+# A Virtual Machine for Ruby on Rails Development
 
 ## Introduction
 
-**Please note this VM is not designed for Rails application development, only Rails core development.**
-
-This project automates the setup of a development environment for working on Ruby on Rails itself. Use this virtual machine to work on a pull request with everything ready to hack and run the test suites.
+This project automates the setup of a development environment for working with Ruby on Rails projects.
 
 ## Requirements
 
@@ -16,7 +14,7 @@ This project automates the setup of a development environment for working on Rub
 
 Building the virtual machine is this easy:
 
-    host $ git clone https://github.com/rails/rails-dev-box.git
+    host $ git clone https://github.com/miguelff/rails-dev-box.git
     host $ cd rails-dev-box
     host $ vagrant up
 
@@ -56,34 +54,6 @@ Port 3000 in the host computer is forwarded to port 3000 in the virtual machine.
 * RabbitMQ
 
 * An ExecJS runtime
-
-## Recommended Workflow
-
-The recommended workflow is
-
-* edit in the host computer and
-
-* test within the virtual machine.
-
-Just clone your Rails fork into the rails-dev-box directory on the host computer:
-
-    host $ ls
-    bootstrap.sh MIT-LICENSE README.md Vagrantfile
-    host $ git clone git@github.com:<your username>/rails.git
-
-Vagrant mounts that directory as _/vagrant_ within the virtual machine:
-
-    vagrant@rails-dev-box:~$ ls /vagrant
-    bootstrap.sh MIT-LICENSE rails README.md Vagrantfile
-
-Install gem dependencies in there:
-
-    vagrant@rails-dev-box:~$ cd /vagrant/rails
-    vagrant@rails-dev-box:/vagrant/rails$ bundle
-
-We are ready to go to edit in the host, and test in the virtual machine.
-
-This workflow is convenient because in the host computer you normally have your editor of choice fine-tuned, Git configured, and SSH keys in place.
 
 ## Virtual Machine Management
 
@@ -156,4 +126,4 @@ Please check the Vagrant documentation on [NFS synced folders](http://docs.vagra
 
 ## License
 
-Released under the MIT License, Copyright (c) 2012–<i>ω</i> Xavier Noria.
+Released under the MIT License, Copyright (c) 2016 Miguel Fernández. Based on https://github.com/rails/rails-dev-box.
