@@ -29,6 +29,7 @@ install Git git
 install SQLite sqlite3 libsqlite3-dev
 install memcached memcached
 install Redis redis-server
+install RabbitMQ rabbitmq-server
 install Elasticsearch elasticsearch
 install 'Nokogiri dependencies' libxml2 libxml2-dev libxslt1-dev
 install 'ExecJS runtime' nodejs

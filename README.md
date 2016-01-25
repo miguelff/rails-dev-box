@@ -53,6 +53,8 @@ Port 3000 in the host computer is forwarded to port 3000 in the virtual machine.
 
 * RabbitMQ
 
+* Elasticsearch
+
 * An ExecJS runtime
 
 ## Virtual Machine Management
